@@ -47,6 +47,7 @@ body {
     content: '';
     position: absolute;
     background-color: red;
+    transform: rotate(45deg);
 }
 
 .cross:before {
