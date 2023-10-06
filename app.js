@@ -40,12 +40,23 @@ function checkScore() {
     winConditions.forEach(array => {
         const circleWins = array.every(box => 
             allSquares[box].firstChild?.classList.contains("circle"))
-    })
+   
 
     if(circleWins) {
         infoDisplay.textContent = "Circle Wins!";
         allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
         return
-    }
-}
+    };
+    });
+    winConditions.forEach(array => {
+        const crossWins = array.every(box => 
+            allSquares[box].firstChild?.classList.contains("cross"))
+   
 
+    if(crossWins) {
+        infoDisplay.textContent = "Cross Wins!";
+        allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+        return
+    };
+    });
+};
