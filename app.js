@@ -27,5 +27,14 @@ function addChoice(e) {
     choice = choice === "circle" ? "cross" : "circle"
     infoDisplay.textContent = "It is now " + choice + "'s go.";
     e.target.removeEventListener("click", addChoice);
+    checkScore();
+}
+
+function checkScore() {
+    const winConditions = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
+    ];
 }
 
