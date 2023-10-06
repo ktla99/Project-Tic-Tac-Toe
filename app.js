@@ -17,6 +17,8 @@ function createBoard() {
 }
 createBoard();
 
-function addChoice() {
+function addChoice(e) {
     const choiceDisplay = document.createElement("div");
+    choiceDisplay.classList.add("circle");
+    e.target.append();
 }
