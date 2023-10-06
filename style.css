@@ -36,3 +36,15 @@ body {
     border-radius: 50%;
     border: 15px solid blue;
 }
+
+.cross {
+    height: 90px;
+    width: 90px;
+    position: relative;
+}
+
+.cross:before, .cross:after {
+    content: '';
+    position: absolute;
+    background-color: red;
+}
