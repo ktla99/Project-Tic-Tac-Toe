@@ -5,7 +5,7 @@ const startBoxes = [
     "", "", "",
     "", "", ""
 ]
-let choiceOne = "circle";
+let choice = "circle";
 infoDisplay.textContent = "Circle goes first";
 
 
@@ -22,7 +22,7 @@ createBoard();
 
 function addChoice(e) {
     const choiceDisplay = document.createElement("div");
-    choiceDisplay.classList.add("cross");
+    choiceDisplay.classList.add("choice");
     e.target.append(choiceDisplay);
 }
 
