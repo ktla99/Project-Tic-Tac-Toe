@@ -24,5 +24,6 @@ function addChoice(e) {
     const choiceDisplay = document.createElement("div");
     choiceDisplay.classList.add("choice");
     e.target.append(choiceDisplay);
+    choice = choice === "circle" ? "cross" : "circle"
 }
 
