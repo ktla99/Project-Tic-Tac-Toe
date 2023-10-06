@@ -1,4 +1,4 @@
-const gameboard = document.getElementById("gameboard");
+const gameBoard = document.getElementById("gameBoard");
 const infoDisplay = document.getElementById("info");
 const startBoxes = [
     "", "", "",
@@ -12,7 +12,7 @@ function createBoard() {
         boxElement.classList.add("square");
         boxElement.id = index;
         boxElement.addEventListener("click", addChoice);
-        gameboard.append(boxElement);
+        gameBoard.append(boxElement);
     })
 }
 createBoard();
@@ -20,5 +20,5 @@ createBoard();
 function addChoice(e) {
     const choiceDisplay = document.createElement("div");
     choiceDisplay.classList.add("circle");
-    e.target.append();
+    e.target.append(choiceDisplay);
 }
