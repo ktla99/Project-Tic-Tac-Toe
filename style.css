@@ -4,9 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-#gameboard {
+#gameBoard {
     width: 500px;
     height: 500px;
     background-color: black;
