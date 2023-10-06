@@ -22,9 +22,10 @@ createBoard();
 
 function addChoice(e) {
     const choiceDisplay = document.createElement("div");
-    choiceDisplay.classList.add("choice");
+    choiceDisplay.classList.add(choice);
     e.target.append(choiceDisplay);
     choice = choice === "circle" ? "cross" : "circle"
-    infoDisplay.textContent = "It is now" + go + "'s go.";
+    infoDisplay.textContent = "It is now " + choice + "'s go.";
+    e.target.removeEventListener("click", addChoice);
 }
 
