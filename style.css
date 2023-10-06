@@ -9,8 +9,8 @@ body {
 }
 
 #gameBoard {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -18,15 +18,15 @@ body {
 }
 
 .square {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     background-color: white;
     border: solid 2px black;
     box-sizing: border-box;
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     color: black;
 }
