@@ -38,8 +38,13 @@ function checkScore() {
         [0,4,8], [2,4,6]
     ];
     winConditions.forEach(array => {
-        array.every(box => 
+        const circleWins = array.every(box => 
             allSquares[box].firstChild?.classList.contains("circle"))
     })
+
+    if(circleWins) {
+        infoDisplay.textContent = "Circle Wins!";
+        allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+    }
 }
 
