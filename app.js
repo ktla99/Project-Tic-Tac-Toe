@@ -45,6 +45,7 @@ function checkScore() {
     if(circleWins) {
         infoDisplay.textContent = "Circle Wins!";
         allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+        return
     }
 }
 
