@@ -25,5 +25,6 @@ function addChoice(e) {
     choiceDisplay.classList.add("choice");
     e.target.append(choiceDisplay);
     choice = choice === "circle" ? "cross" : "circle"
+    infoDisplay.textContent = "It is now" + go + "'s go.";
 }
 
